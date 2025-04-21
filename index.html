@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get to know about me</title>
     <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
-    <!-- <h1>Hello World!</h1> -->
-    <div id="navigation-bar">
-      <a class="abc" id="logo">
+    <div
+      class="topnav"
+      id="myTopnav"
+      style="background-color: rgb(107, 170, 243)"
+    >
+      <!-- <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a> -->
+
+      <a class="abc" id="logo" href="index.html">
         <img src="dj1.jpg" alt="logo" class="logo-btn" />
       </a>
       <!-- <div class="links"> -->
@@ -18,8 +30,28 @@
       <a href="#" class="nav-link">Work Experience</a>
       <a href="#" class="nav-link">Education</a>
       <a href="projects.html" class="nav-link">Projects</a>
-      <!-- </div> -->
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
+
+    <div style="padding-left: 16px">
+      <h2>Responsive Topnav Example</h2>
+      <p>Resize the browser window to see how it works.</p>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
     <h2>Next Boostrap</h2>
     <p>GitHub Testing</p>
   </body>
