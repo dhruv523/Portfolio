@@ -1,0 +1,22 @@
+#navigation-bar {
+  background-color: rgb(107, 170, 243);
+  height: 75px;
+  align-content: center;
+}
+.nav-link {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: large;
+  font-weight: 900;
+  padding: 5%;
+}
+
+.logo-btn {
+  height: 40px;
+  width: 50px;
+  border-radius: 25px;
+  padding-left: 2%;
+}
+
+/* #logo {
+} */
